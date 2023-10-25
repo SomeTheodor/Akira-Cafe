@@ -19,11 +19,57 @@
   vertical-align: top; /* Centrar verticalmente (opcional) */
 }
 
-/* Agrega este CSS a tu archivo style.css */
+/* Estilo para el título "Comidas" */
 h1.my-4 {
-    font-family: 'Poppins', sans-serif; /* Fuente personalizada */
-    font-size: 36px; /* Tamaño de fuente personalizado */
-    color: #333; /* Color del texto personalizado */
-    margin-bottom: 20px; /* Espacio inferior */
-  }
-  
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  color: #000000; /* Negro */
+  margin-bottom: 20px;
+}
+
+/* Estilo para el fondo de la cabecera */
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(33, 33, 33, 0.608), rgba(33, 33, 33, 0.608)), url(images/cafe.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+/* Estilo para el color del texto en la página */
+p {
+  color: #000000; /* Negro */
+}
+
+/* Estilo para el título en las tarjetas */
+h5.card-title {
+  color: #ff1313; /* Rojo al pasar el mouse */
+}
+
+/* Estilo para los botones */
+.btn-primary {
+  background-color: #ffffff; /* Blanco al pasar el mouse */
+  color: #ff1313; /* Rojo al pasar el mouse */
+}
+
+/* Estilo para el color de fondo al pasar el mouse */
+.card:hover {
+  background-position: 0 2.5%;
+}
+
+/* Estilo para el ícono */
+.icon-wrapper {
+  background-color: #f43636; /* Rojo al pasar el mouse */
+  color: #fff;
+}
+
+/* Estilo para el color del texto */
+h3 {
+  color: #8c2a00; /* Naranja oscuro al pasar el mouse */
+}
+
+/* Estilo para el texto en las tarjetas */
+p.card-text {
+  color: #505371; /* Gris claro al pasar el mouse */
+}
