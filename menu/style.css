@@ -49,10 +49,15 @@ h5.card-title {
 
 /* Estilo para los botones */
 .btn-primary {
+    border: none;
   background-color: #ffffff; /* Blanco al pasar el mouse */
   color: #ff1313; /* Rojo al pasar el mouse */
 }
-
+.btn-primary:hover {
+    border: none;
+  background-color: #ff1313; /* Blanco al pasar el mouse */
+  color: #ffffff; /* Rojo al pasar el mouse */
+}
 /* Estilo para el color de fondo al pasar el mouse */
 .card:hover {
   background-position: 0 2.5%;
