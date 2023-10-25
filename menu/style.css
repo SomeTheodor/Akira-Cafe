@@ -1,0 +1,29 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  text-align: center; /* Centrar horizontalmente */
+}
+
+.card {
+  display: inline-block;
+  width: 18rem; /* Ancho deseado para las tarjetas */
+  margin: 10px; /* Espacio entre las tarjetas */
+  vertical-align: top; /* Centrar verticalmente (opcional) */
+}
+
+/* Agrega este CSS a tu archivo style.css */
+h1.my-4 {
+    font-family: 'Poppins', sans-serif; /* Fuente personalizada */
+    font-size: 36px; /* Tamaño de fuente personalizado */
+    color: #333; /* Color del texto personalizado */
+    margin-bottom: 20px; /* Espacio inferior */
+  }
+  
