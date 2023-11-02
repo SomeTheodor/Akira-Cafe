@@ -40,7 +40,7 @@
 
 <header class="section-header py-3">
 <div class="container">
-	<h2>Demo page </h2> 
+	<h2>Informe de <a href="index.html">Akira</a> </h2> 
 </div>
 </header> <!-- section-header.// -->
 
@@ -53,40 +53,67 @@
 <nav class="sidebar card py-2 mb-4">
 <ul class="nav flex-column" id="nav_accordion">
 	<li class="nav-item">
-		<a class="nav-link" href="#"> Link name </a>
-	</li>
-	<li class="nav-item">
-		<a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item1" href="#"> Submenu links <i class="bi small bi-caret-down-fill"></i> </a>
+		<a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item1" href="#"> Planos <i class="bi small bi-caret-down-fill"></i> </a>
 		<ul id="menu_item1" class="submenu collapse" data-bs-parent="#nav_accordion">
-			<li><a class="nav-link" href="#">Submenu item 1 </a></li>
-		    <li><a class="nav-link" href="#">Submenu item 2 </a></li>
-		    <li><a class="nav-link" href="#">Submenu item 3 </a> </li>
+			<li><a class="nav-link" href="#planos2d">Planos 2D</a></li>
+		    <li><a class="nav-link" href="#planos3d">planos 3D</a></li>
 		</ul>
-
 	</li>
 	<li class="nav-item">
-		<a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item2" href="#"> More menus <i class="bi small bi-caret-down-fill"></i> </a>
+		<a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item2" href="#"> Actividades <i class="bi small bi-caret-down-fill"></i> </a>
 		<ul id="menu_item2" class="submenu collapse" data-bs-parent="#nav_accordion">
-			<li><a class="nav-link" href="#">Submenu item 4 </a></li>
-		    <li><a class="nav-link" href="#">Submenu item 5 </a></li>
-		    <li><a class="nav-link" href="#">Submenu item 6 </a></li>
-		    <li><a class="nav-link" href="#">Submenu item 6 </a></li>
+			<li><a class="nav-link" href="#servicioCafe">Servicio de Café</a></li>
+		    <li><a class="nav-link" href="#ventaLibros">Venta de libros</a></li>
+			<li><a class="nav-link" href="#gestionRH">Gestion de RRHH</a></li>
+			<li><a class="nav-link" href="#gestionAmbiente">Gestion de ambientes</a></li>
+			<li><a class="nav-link" href="#MarketingPromocion">Marketing y promocion</a></li>
 		</ul>
 	</li>
 	<li class="nav-item">
-		<a class="nav-link" href="#prueba"> Another page </a>
+		<a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item3" href="#"> Sectores <i class="bi small bi-caret-down-fill"></i> </a>
+		<ul id="menu_item3" class="submenu collapse" data-bs-parent="#nav_accordion">
+			<li><a class="nav-link" href="#">Sotano</a></li>
+		    <li><a class="nav-link" href="#">Planta Baja</a></li>
+			<li><a class="nav-link" href="#">Planta Alta</a></li>
+		</ul>
 	</li>
 	<li class="nav-item">
-		<a class="nav-link" href="#"> Demo link </a>
+		<a class="nav-link" href="#"> Ciclo de vida </a>
 	</li>
 	<li class="nav-item">
-		<a class="nav-link" href="#"> Menu item </a>
+		<a class="nav-link" href="#"> Actividades </a>
 	</li>
 	<li class="nav-item">
-		<a class="nav-link" href="#"> Something </a>
+		<a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item4" href="#"> DFD´s <i class="bi small bi-caret-down-fill"></i> </a>
+		<ul id="menu_item4" class="submenu collapse" data-bs-parent="#nav_accordion">
+			<li><a class="nav-link" href="#">DFD Nivel 1 </a></li>
+		    <li><a class="nav-link" href="#">DFD Nivel 2 </a></li>
+		    <li><a class="nav-link" href="#">DFD Nivel 3</a></li>
+		    <li><a class="nav-link" href="#">DFD Nivel 4 </a></li>
+		</ul>
 	</li>
 	<li class="nav-item">
-		<a class="nav-link" href="#"> Other link </a>
+		<a class="nav-link" href="#prueba"> Distribucion del trabajo </a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="#"> Cursogramas </a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item5" href="#">Seguridad e Higiene <i class="bi small bi-caret-down-fill"></i> </a>
+		<ul id="menu_item5" class="submenu collapse" data-bs-parent="#nav_accordion">
+			<li><a class="nav-link" href="#">Seguridad </a></li>
+		    <li><a class="nav-link" href="#">Higiene </a></li>
+		</ul>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item6" href="#">Pantallas y Formularios<i class="bi small bi-caret-down-fill"></i> </a>
+		<ul id="menu_item6" class="submenu collapse" data-bs-parent="#nav_accordion">
+			<li><a class="nav-link" href="#">Pantallas </a></li>
+		    <li><a class="nav-link" href="#">Formularios </a></li>
+		</ul>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="#"> Costo </a>
 	</li>
 </ul>
 </nav>
@@ -94,84 +121,79 @@
 		</aside>
 		<main class="col-lg-9">
 
-<h6>Demo for sidebar nav menu links. <br> Based on Bootstrap 5 CSS framework.  </h6>
-<p>For this demo page you should connect to the internet to receive files from CDN  like Bootstrap5 CSS, Bootstrap5 JS</p>
+<h2>Introduccion</h2>
 
-<p class="text-muted"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+<p class="text-muted">Esta página tiene la función de proporcionar una visión completa de toda la información generada a lo largo del proyecto Akira Cafe. Nuestra intención es ofrecer a quienes estén interesados en este emprendimiento una exposición detallada de nuestras ideas, planos, gráficos y otros aspectos relevantes. A través de esta plataforma, buscamos demostrar cómo Akira Cafe se posiciona como una idea sumamente rentable en la actual era de emprendimientos, brindando una visión ampliada de su potencial y oportunidades de desarrollo.
+<br><br>
+A la izquierda de la página, encontrarás un índice que te permitirá acceder de manera rápida y sencilla a cada sección de nuestro sitio. En este índice, te proporcionamos una breve introducción de los contenidos que verás y te explicamos en detalle en qué consiste cada tema. De esta manera, podrás explorar de manera organizada y comprender a fondo todos los aspectos relacionados con el proyecto Akira Cafe.
+<br><br>
+En caso de que no estés interesado en explorar la página en su totalidad, te ofrecemos la opción de descargar un documento que contiene información detallada sobre nuestra empresa. Este documento amplía los contenidos que hemos presentado aquí, proporcionándote aún más detalles sobre el proyecto Akira Cafe.
+</p>
 
-<a href="https://bootstrap-menu.com/detail-sidebar-nav-collapse.html" class="btn btn-success"> &laquo Back to tutorial or Download code</a>
-
+<a href="#" class="btn btn-success">Descargar Informe</a>
+		</main>
+		<br>
+	<main class="col-lg-7">
+		<h2 id="planos">Planos</h2>
+		<p class="text-muted"> En la sección de Planos, hemos preparado una visión completa de nuestra planificación y diseño para el proyecto Akira Cafe. Aquí, encontrarás dos tipos de planos que son fundamentales para comprender la estructura y el diseño del café.
+<br>
+			Por un lado, hemos elaborado planos 2D, los cuales han sido dispuestos en hojas tamaño A6. Estos planos proporcionan una representación detallada de la distribución espacial, la disposición de los elementos clave y la disposición general del café. Son ideales para una comprensión precisa de la disposición de las áreas de servicio, mesas, cocina y otros aspectos esenciales.
+			<br>
+			Además, hemos creado planos en 3D que te permitirán sumergirte en el modelado tridimensional de Akira Cafe. Con estos planos, podrás visualizar de manera realista cómo se verá el espacio una vez que esté construido. Esto incluye detalles como la disposición del mobiliario, la iluminación, y otros aspectos de diseño que hacen que Akira Cafe cobre vida de una manera emocionante.</p>
 		</main>
 		<main class="col-lg-9">
+		<h3 id="planos2d">Planos 2D</h3>		
+		<p class="text-muted"> Los Planos 2D, presentados en esta sección, se dividen en tres niveles clave para proporcionar una comprensión detallada de la disposición y las dimensiones de Akira Cafe. Cada nivel ofrece información valiosa sobre la distribución y las áreas de importancia en el café:
+<br>
+			Sótano: En el plano del sótano, encontrarás información detallada sobre las dimensiones de esta área, junto con sus divisiones específicas. Esto incluye la disposición de zonas de almacenamiento, instalaciones técnicas y cualquier otro detalle importante que se encuentre en este nivel. Además, te proporcionaremos una visión clara de las salidas y las conexiones con otros niveles para garantizar una circulación fluida y segura.
+			<br>
+			Planta Baja: El plano de la planta baja es esencial para comprender la experiencia de los clientes en Akira Cafe. Aquí, podrás visualizar las divisiones que incluyen la disposición de mesas, la ubicación de la barra, las zonas de servicio, y las entradas y salidas principales. Esto te permitirá apreciar cómo los clientes acceden y se mueven a través del café, lo que es crucial para garantizar una experiencia agradable y eficiente.
+			<br>
+			Planta Alta: En el plano de la planta alta, se presentan las divisiones y las salidas de emergencia en esta área. Esto es fundamental para la seguridad de los clientes y el personal, ya que se muestra claramente cómo evacuar el edificio en caso de una situación de emergencia. También, se detalla la disposición de las áreas de estar y las divisiones específicas que conforman este nivel.</p>
+			<a href="#" class="btn btn-success">Descargar Planos</a>
+		</main>
+			<main class="col-lg-9">
+				<h3 id="planos3d">Planos 3D</h3>		
+				<p class="text-muted"> Los Planos 3D, que te presentamos en esta sección, ofrecen una perspectiva aún más detallada de Akira Cafe. Estos planos tridimensionales te permiten explorar con mayor profundidad la disposición de los inmuebles, las entradas y salidas, así como las decoraciones que hacen que nuestro café sea único y acogedor.
+	<br>
+					En estos Planos 3D, podrás sumergirte en una experiencia virtual que muestra con gran precisión cómo se verá cada rincón del café. Desde la disposición de las mesas y sillas, hasta la ubicación de la barra y la iluminación, todo está representado en un formato tridimensional. Esto te proporcionará una visión más realista y detallada de Akira Cafe, lo que te ayudará a apreciar los pequeños matices que hacen que nuestro espacio sea especial.
+					<br>
+					Además, en estos planos, también podrás identificar claramente las entradas y salidas, lo que es esencial tanto para la comodidad de los clientes como para la seguridad. Los detalles de diseño, como la elección de los colores, la disposición de las decoraciones y los elementos que contribuyen a la atmósfera acogedora del café, se presentan con claridad en estos planos 3D.
+					
+					</p>
+					<a href="#" class="btn btn-success">Descargar Planos 3D</a>
+				</main>
+<main class="col-lg-9">
+<h3 id="actividades">Actividades</h3>		
+<p class="text-muted"> En esta sección, se presentarán las actividades principales que serán llevadas a cabo. Dichas actividades son fundamentales para el funcionamiento y desarrollo de la empresa, y abarcan diversas áreas relacionadas con la operación del café literario. A continuación, se explicarán brevemente los temas que componen esta sección
+</p>
+</main>
+<main class="col-lg-9">
+	<h3 id="servicioCafe"> Preparación y servicio de café</h3>		
+	<p class="text-muted"> Esta actividad incluye la selección de granos de café de alta calidad, su molienda y preparación adecuada para obtener bebidas deliciosas y aromáticas. También se abordará el servicio al cliente, asegurando una atención amable y eficiente en la entrega de las bebidas.
 
-			<h6>Demo for sidebar nav menu links. <br> Based on Bootstrap 5 CSS framework.  </h6>
-			<p>For this demo page you should connect to the internet to receive files from CDN  like Bootstrap5 CSS, Bootstrap5 JS</p>
-			
-			<p class="text-muted"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-			
-			<a href="https://bootstrap-menu.com/detail-sidebar-nav-collapse.html" class="btn btn-success"> &laquo Back to tutorial or Download code</a>
-			
-					</main>
-					<main class="col-lg-9">
+	</p>
+	</main>
+	<main class="col-lg-9">
+		<h3 id="ventaLibros">Venta y recomendación de libros</h3>		
+		<p class="text-muted"> Akira Café se distingue por su enfoque literario, por lo que una de las actividades principales es la venta y recomendación de libros. Esto implica contar con una selección cuidadosa de títulos, mantener un inventario actualizado y ofrecer asesoramiento personalizado a los clientes en función de sus intereses y preferencias literarias.
 
-						<h6>Demo for sidebar nav menu links. <br> Based on Bootstrap 5 CSS framework.  </h6>
-						<p>For this demo page you should connect to the internet to receive files from CDN  like Bootstrap5 CSS, Bootstrap5 JS</p>
-						
-						<p class="text-muted"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-						
-						<a href="https://bootstrap-menu.com/detail-sidebar-nav-collapse.html" class="btn btn-success"> &laquo Back to tutorial or Download code</a>
-						
-								</main>
-								<main class="col-lg-9" id="prueba">
+		</p>
+		</main>
+		<main class="col-lg-9">
+			<h3 id="gestionRH">Gestión de recursos humanos </h3>		
+			<p class="text-muted">Las actividades principales también incluyen la gestión del equipo. Esto implica la contratación y capacitación del personal, la asignación de tareas y responsabilidades, la supervisión y motivación del equipo, y la creación de un ambiente laboral positivo y colaborativo.
 
-									<h6>Demo for sidebar nav menu links. <br> Based on Bootstrap 5 CSS framework.  </h6>
-									<p>For this demo page you should connect to the internet to receive files from CDN  like Bootstrap5 CSS, Bootstrap5 JS</p>
-									
-									<p class="text-muted"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-									proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-									proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-									
-									<a href="#" > &laquo Back to tutorial or Download code</a>
-									
-											</main>
+			</p>
+			</main>
+			<main class="col-lg-9">
+				<h3 id="gestionAmbiente">Gestión de espacios y ambiente</h3>		
+				<p class="text-muted">La creación de un ambiente acogedor y temático es fundamental. Esto implica la gestión adecuada de los espacios disponibles, la decoración acorde con la temática literaria, el mantenimiento de la limpieza y orden, y la creación de una atmósfera propicia para la lectura y el disfrute del café.</p>
+				</main>		
+<main class="col-lg-9">
+<h3 id="MarketingPromocion">Marketing y promoción</h3>		
+<p class="text-muted">La promoción adecuada es esencial para atraer a clientes y dar a conocer nuestras propuestas. Por lo tanto, se llevarán a cabo actividades de marketing y promoción, que pueden incluir estrategias en redes sociales, publicidad en medios locales, colaboraciones con otras empresas o instituciones, entre otros.</p>
+</main>		
 	</div>
 </section>
 
