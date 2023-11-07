@@ -26,11 +26,51 @@
 }
 .sidebar .nav-link {
     font-weight: 500;
-    color: var(--bs-dark);
+    color: black;
 }
 .sidebar .nav-link:hover {
-    color: var(--bs-primary);
+    color: red;
 }
+/* Estilizar un botón personalizado en Bootstrap */
+.btn-custom {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #000000; /* Texto negro */
+    border: none; /* Eliminar el borde */
+    transition: background-color 0.3s, color 0.3s; /* Agregar una transición suave */
+}
+
+.btn-custom:hover {
+    background-color: #ff1900; /* Cambiar el color de fondo a rojo al pasar el ratón por encima */
+    color: #ffffff; /* Cambiar el texto a blanco al pasar el ratón por encima */
+}
+ul.custom-list {
+    list-style: none; /* Eliminar los marcadores de lista */
+    padding-left: 0; /* Eliminar el relleno a la izquierda */
+}
+
+ul.custom-list li {
+    font-size: 16px;
+    margin: 5px 0;
+    padding-left: 20px; 
+}
+/* Estilo para el encabezado h2 con la clase "informe-header" */
+.informe-header {
+    font-size: 34pt;
+    margin-bottom: 5px;
+}
+
+/* Estilo para el enlace dentro del encabezado con la clase "informe-header" */
+.informe-header a {
+    text-decoration: none;
+    color: #ff0000;
+    transition: color 0.3s;
+}
+
+/* Cambiar el color del enlace al pasar el ratón por encima */
+.informe-header a:hover {
+    color: #b30000;
+}
+
 
 </style>
 
@@ -39,7 +79,7 @@
 <body class="bg-light">
     <header class="section-header py-3">
         <div class="container">
-            <h2>Informe de <a href="index.html">Akira</a></h2>
+            <h2 class="informe-header"><a href="index.html">Informe de Akira Cafe</a></h2>
         </div>
     </header>
     <div class="container">
@@ -51,13 +91,15 @@
 	<li class="nav-item">
 		<a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item1" href="#"> Planos <i class="bi small bi-caret-down-fill"></i> </a>
 		<ul id="menu_item1" class="submenu collapse" data-bs-parent="#nav_accordion">
+			<li><a class="nav-link" href="#planos">Planos</a></li>
 			<li><a class="nav-link" href="#planos2d">Planos 2D</a></li>
-		    <li><a class="nav-link" href="#planos3d">planos 3D</a></li>
+		    <li><a class="nav-link" href="#planos3d">Planos 3D</a></li>
 		</ul>
 	</li>
 	<li class="nav-item">
 		<a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item2" href="#"> Actividades <i class="bi small bi-caret-down-fill"></i> </a>
 		<ul id="menu_item2" class="submenu collapse" data-bs-parent="#nav_accordion">
+			<li><a class="nav-link" href="#actividades">Actividades</a></li>
 			<li><a class="nav-link" href="#servicioCafe">Servicio de Café</a></li>
 		    <li><a class="nav-link" href="#ventaLibros">Venta de libros</a></li>
 			<li><a class="nav-link" href="#gestionRH">Gestion de RRHH</a></li>
@@ -68,48 +110,67 @@
 	<li class="nav-item">
 		<a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item3" href="#"> Sectores <i class="bi small bi-caret-down-fill"></i> </a>
 		<ul id="menu_item3" class="submenu collapse" data-bs-parent="#nav_accordion">
-			<li><a class="nav-link" href="#">Sotano</a></li>
-		    <li><a class="nav-link" href="#">Planta Baja</a></li>
-			<li><a class="nav-link" href="#">Planta Alta</a></li>
+			<li><a class="nav-link" href="#sectores">Sectores</a></li>
+			<li><a class="nav-link" href="#sotano">Sotano</a></li>
+		    <li><a class="nav-link" href="#plantaBaja">Planta Baja</a></li>
+			<li><a class="nav-link" href="#plantaAlta">Planta Alta</a></li>
 		</ul>
 	</li>
 	<li class="nav-item">
-		<a class="nav-link" href="#"> Ciclo de vida </a>
-	</li>
-	<li class="nav-item">
-		<a class="nav-link" href="#">Diccionario de datos </a>
-	</li>
-	<li class="nav-item">
-		<a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item4" href="#"> DFD´s <i class="bi small bi-caret-down-fill"></i> </a>
+		<a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item4" href="#"> Ciclo de vida <i class="bi small bi-caret-down-fill"></i> </a>
 		<ul id="menu_item4" class="submenu collapse" data-bs-parent="#nav_accordion">
-			<li><a class="nav-link" href="#">DFD Nivel 1 </a></li>
-		    <li><a class="nav-link" href="#">DFD Nivel 2 </a></li>
-		    <li><a class="nav-link" href="#">DFD Nivel 3</a></li>
-		    <li><a class="nav-link" href="#">DFD Nivel 4 </a></li>
+			<li><a class="nav-link" href="#cicloVida">Ciclo de vida</a></li>
+			<li><a class="nav-link" href="#problemas">Problemas</a></li>
+		    <li><a class="nav-link" href="#oportunidades">Oportunidades</a></li>
+			<li><a class="nav-link" href="#objetivos">Objetivos</a></li>
 		</ul>
 	</li>
 	<li class="nav-item">
-		<a class="nav-link" href="#prueba"> Distribucion del trabajo </a>
-	</li>
-	<li class="nav-item">
-		<a class="nav-link" href="#"> Cursogramas </a>
-	</li>
-	<li class="nav-item">
-		<a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item5" href="#">Seguridad e Higiene <i class="bi small bi-caret-down-fill"></i> </a>
+		<a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item5" href="#"> Diccionario de datos <i class="bi small bi-caret-down-fill"></i> </a>
 		<ul id="menu_item5" class="submenu collapse" data-bs-parent="#nav_accordion">
-			<li><a class="nav-link" href="#">Seguridad </a></li>
-		    <li><a class="nav-link" href="#">Higiene </a></li>
+			<li><a class="nav-link" href="#dic-datos">Diccionario de datos</a></li>
+			<li><a class="nav-link" href="#tablaSocio">Tabla Socios</a></li>
+			<li><a class="nav-link" href="#tablaPedidos">Tabla Pedidos</a></li>
+		    <li><a class="nav-link" href="#tablaLibros">Tabla Libros</a></li>
+			<li><a class="nav-link" href="#tablaAutores">Tabla Autores</a></li>
+			<li><a class="nav-link" href="#tablaEditorial">Tabla Editoriales</a></li>
+			<li><a class="nav-link" href="#tablaEmpleado">Tabla Empleados</a></li>
+		    <li><a class="nav-link" href="#tablaProveedor">Tabla Proveedores</a></li>
+			<li><a class="nav-link" href="#tablaIngrediente">Tabla Ingredientes</a></li>
 		</ul>
 	</li>
 	<li class="nav-item">
-		<a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item6" href="#">Pantallas y Formularios<i class="bi small bi-caret-down-fill"></i> </a>
+		<a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item6" href="#"> DFD´s <i class="bi small bi-caret-down-fill"></i> </a>
 		<ul id="menu_item6" class="submenu collapse" data-bs-parent="#nav_accordion">
-			<li><a class="nav-link" href="#">Pantallas </a></li>
-		    <li><a class="nav-link" href="#">Formularios </a></li>
+			<li><a class="nav-link" href="#dfd">DFD </a></li>
+			<li><a class="nav-link" href="#dfd1">DFD Nivel 1 </a></li>
+		    <li><a class="nav-link" href="#dfd2">DFD Nivel 2 </a></li>
+		    <li><a class="nav-link" href="#dfd3">DFD Nivel 3</a></li>
+		    <li><a class="nav-link" href="#dfd4">DFD Nivel 4 </a></li>
 		</ul>
 	</li>
 	<li class="nav-item">
-		<a class="nav-link" href="#"> Costo </a>
+		<a class="nav-link" href="#distribucionTrabajo"> Distribucion del trabajo </a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item7" href="#"> Cursogramas <i class="bi small bi-caret-down-fill"></i> </a>
+		<ul id="menu_item7" class="submenu collapse" data-bs-parent="#nav_accordion">
+			<li><a class="nav-link" href="#cursograma">Cursogramas </a></li>
+			<li><a class="nav-link" href="#pedidoLibro">Pedido de Libros </a></li>
+		    <li><a class="nav-link" href="#pedidoSuministro">Pedido de Suministros </a></li>
+		    <li><a class="nav-link" href="#facturaPedido">Factura de Pedidos</a></li>
+		    <li><a class="nav-link" href="#facturaLibro">Factura de Pedido de Libros </a></li>
+		</ul>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item8" href="#">Seguridad e Higiene <i class="bi small bi-caret-down-fill"></i> </a>
+		<ul id="menu_item8" class="submenu collapse" data-bs-parent="#nav_accordion">
+			<li><a class="nav-link" href="#seguridad">Seguridad </a></li>
+		    <li><a class="nav-link" href="#higiene">Higiene </a></li>
+		</ul>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="#costo"> Costo </a>
 	</li>
 </ul>
 </nav>
@@ -123,7 +184,7 @@
 				<br><br>
 				En caso de que no estés interesado en explorar la página en su totalidad, te ofrecemos la opción de descargar un documento que contiene información detallada sobre nuestra empresa. Este documento amplía los contenidos que hemos presentado aquí, proporcionándote aún más detalles sobre el proyecto Akira Cafe.
 			</p>
-			<a href="#" class="btn btn-success">Descargar Informe</a>
+			<a href="#" class="btn btn-custom">Descargar Informe</a>
 		</main>
 		<br>
 	<main class="col-lg-7">
@@ -141,7 +202,7 @@ Sótano: En el plano del sótano, encontrarás información detallada sobre las 
 			Planta Baja: El plano de la planta baja es esencial para comprender la experiencia de los clientes en Akira Cafe. Aquí, podrás visualizar las divisiones que incluyen la disposición de mesas, la ubicación de la barra, las zonas de servicio, y las entradas y salidas principales.
 			<br>
 			Planta Alta: En el plano de la planta alta, se presentan las divisiones y las salidas de emergencia en esta área. Esto es fundamental para la seguridad de los clientes y el personal, ya que se muestra claramente cómo evacuar el edificio en caso de una situación de emergencia. </p>
-			<a href="#" class="btn btn-success">Descargar Planos</a>
+			<a href="#" class="btn btn-custom">Descargar Planos</a>
 		</main>
 			<main class="col-lg-9">
 				<br>
@@ -153,11 +214,11 @@ Sótano: En el plano del sótano, encontrarás información detallada sobre las 
 					Además, en estos planos, también podrás visualizar los detalles de diseño, como la elección de los colores, la disposición de las decoraciones y los elementos que contribuyen a la atmósfera acogedora del café.
 					
 					</p>
-					<a href="#" class="btn btn-success">Descargar Planos 3D</a>
+					<a href="#" class="btn btn-custom">Descargar Planos 3D</a>
 					
 				</main>
 <main class="col-lg-9"><br>
-<h3 id="actividades">Actividades</h3>		
+<h2 id="actividades">Actividades</h2>		
 <p class="text-muted"> En esta sección, se presentarán las actividades principales que serán llevadas a cabo. Dichas actividades son fundamentales para el funcionamiento y desarrollo de la empresa, y abarcan diversas áreas relacionadas con la operación del café literario. A continuación, se explicarán brevemente los temas que componen esta sección
 </p>
 </main>
@@ -188,14 +249,14 @@ Sótano: En el plano del sótano, encontrarás información detallada sobre las 
 <p class="text-muted">La promoción adecuada es esencial para atraer a clientes y dar a conocer nuestras propuestas. Por lo tanto, se llevarán a cabo actividades de marketing y promoción, que pueden incluir estrategias en redes sociales, publicidad en medios locales, colaboraciones con otras empresas o instituciones, entre otros.</p>
 </main>
 <main class="col-lg-9">
-	<h3 id="servicioCafe">Sectores</h3>		
+	<h2 id="sectores">Sectores</h2>		
 	<p class="text-muted"> Akira Café está compuesto por tres pisos, cada uno de los cuales desempeña un papel importante en el funcionamiento y la experiencia general del café.</p>
 	</main>
 <main class="col-lg-9">
-	<h3 id="MarketingPromocion">Sotano</h3>		
+	<h3 id="sotano">Sotano</h3>		
 	<p class="text-muted">
 		En el sótano podemos encontrar lo siguiente:
-		<ul>
+		<ul class="custom-list">
 			<li>Zona de cocina</li>
 			<li>Almacen</li>
 			<li>Zona de descanso</li>
@@ -203,10 +264,10 @@ Sótano: En el plano del sótano, encontrarás información detallada sobre las 
 		</p>
 	</main>
 	<main class="col-lg-9">
-		<h3 id="MarketingPromocion">Planta Baja</h3>		
+		<h3 id="plantaBaja">Planta Baja</h3>		
 		<p class="text-muted">
 			En este piso, se puede visualizar la estructura en donde el cliente interactúa con el café. En dicha zona se encuentra
-			<ul>
+			<ul class="custom-list">
 				<li>Zona de barista</li>
 				<li>Zona de atención al cliente</li>
 				<li>Area de descanso</li>
@@ -214,10 +275,10 @@ Sótano: En el plano del sótano, encontrarás información detallada sobre las 
 			</p>
 		</main>
 		<main class="col-lg-9">
-			<h3 id="MarketingPromocion">Planta Alta</h3>		
+			<h3 id="plantaAlta">Planta Alta</h3>		
 			<p class="text-muted">
 				Aquí se encuentra una zona más relajada, diseñada para disfrutar mas la lectura que el café, para aquellos que desean un ambiente mas acogedor. A su vez, podemos encontrar lo siguiente:
-				<ul>
+				<ul class="custom-list">
 					<li>Area de descanso</li>
 					<li>Zona de Vigilancia</li>
 					<li>Zona de administración</li>
@@ -226,31 +287,31 @@ Sótano: En el plano del sótano, encontrarás información detallada sobre las 
 				</p>
 			</main>
 			<main class="col-lg-9">
-				<h3 id="gestionAmbiente">Ciclo de Vida</h3>		
+				<h2 id="cicloVida">Ciclo de Vida</h2>		
 				<p class="text-muted">En esta sección, se establecen los objetivos específicos, se identifican los problemas y oportunidades, y se definen los objetivos SMART que guiarán la dirección de Akira Cafe.</p>
 			</main>	
 			<main class="col-lg-9">
-				<h3 id="gestionAmbiente">Problemas</h3>		
+				<h3 id="problemas">Problemas</h3>		
 				<p class="text-muted">Durante esta etapa, se realiza un análisis exhaustivo de los problemas que enfrenta Akira. Estos problemas pueden incluir retrasos en la atención al cliente, dificultades en la gestión de inventarios, problemas de calidad en los productos, falta de eficiencia en los procesos, entre otros. La identificación de estos problemas permite tomar acciones correctivas y mejorar el desempeño general del negocio.</p>
 			</main>
 			<main class="col-lg-9">
-				<h3 id="gestionAmbiente">Oportunidades</h3>		
+				<h3 id="oportunidades">Oportunidades</h3>		
 				<p class="text-muted">A su vez, se deben identificar las oportunidades que pueden aprovecharse para el crecimiento y éxito de Akira. Estas oportunidades pueden incluir la expansión del negocio a nuevas ubicaciones, la colaboración con otras empresas o la implementación de tecnología para mejorar la experiencia del cliente. Identificar y aprovechar estas oportunidades puede generar ventajas competitivas y nuevas fuentes de ingresos para la empresa.</p>
 			</main>
 			<main class="col-lg-9">
-				<h3 id="gestionAmbiente">Objetivos</h3>		
+				<h3 id="objetivos">Objetivos</h3>		
 				<p class="text-muted">En esta etapa, se establecen los objetivos que se desean alcanzar en Akira Café. Estos objetivos deben ser específicos, medibles, alcanzables, relevantes y limitados en el tiempo (SMART). Pueden incluir el aumento de la cuota de mercado, la mejora de la satisfacción del cliente, el incremento de las ventas, la optimización de los procesos internos, la construcción de una marca sólida, entre otros. Estos objetivos proporcionan una dirección clara para la toma de decisiones y la planificación estratégica de Akira Café.</p>
 			</main>
 			<main class="col-lg-9">
-				<h3 id="gestionAmbiente">Diccionario de Datos</h3>		
+				<h2 id="dic-datos">Diccionario de Datos</h2>		
 				<p class="text-muted">El Diccionario de Datos es una herramienta esencial para Akira cafe ya que proporciona una descripción detallada de los elementos que componen su base de datos, incluyendo tablas, campos y sus atributos.
 				Las tablas que componen a esta base de datos son las siguientes:
 				</p>
 			</main>
 			<main class="col-lg-9">
-				<h3 id="gestionAmbiente">Tabla Socios</h3>		
+				<h3 id="tablaSocio">Tabla Socios</h3>		
 				<p class="text-muted">
-					<ul>
+					<ul class="custom-list">
 						<li>Nro_socio: Número de identificación del socio.</li>
 						<li>Nombre: Nombre del socio.</li>
 						<li>Puntos: Puntos acumulados por el socio.</li>
@@ -261,9 +322,9 @@ Sótano: En el plano del sótano, encontrarás información detallada sobre las 
 				</p>
 			</main>
 			<main class="col-lg-9">
-				<h3 id="gestionAmbiente">Tabla Pedidos</h3>		
+				<h3 id="tablaPedidos">Tabla Pedidos</h3>		
 				<p class="text-muted">
-					<ul>
+					<ul class="custom-list">
 						<li>ID_pedido: Identificador único del pedido.</li>
 						<li>ID_libro: Identificador único del libro en el pedido.</li>
 						<li>Nr_pedido: Número de identificación del pedido.</li>
@@ -275,9 +336,9 @@ Sótano: En el plano del sótano, encontrarás información detallada sobre las 
 				</p>
 			</main>
 			<main class="col-lg-9">
-				<h3 id="gestionAmbiente">Tabla Libros</h3>		
+				<h3 id="tablaLibros">Tabla Libros</h3>		
 				<p class="text-muted">
-					<ul>
+					<ul class="custom-list">
 						<li>Precio: Precio del libro.</li>
 						<li>Cantidad: Cantidad de copias del libro.</li>
 						<li>Nombre: Nombre del libro.</li>
@@ -287,9 +348,9 @@ Sótano: En el plano del sótano, encontrarás información detallada sobre las 
 				</p>
 			</main>
 			<main class="col-lg-9">
-				<h3 id="gestionAmbiente">Tabla Autores</h3>		
+				<h3 id="tablaAutores">Tabla Autores</h3>		
 				<p class="text-muted">
-					<ul>
+					<ul class="custom-list">
 						<li>ID_autor: Identificador único del autor.</li>
 						<li>Nombre: Nombre del autor.</li>
 						<li>Apellido: Apellido del autor.</li>
@@ -297,9 +358,9 @@ Sótano: En el plano del sótano, encontrarás información detallada sobre las 
 				</p>
 			</main>
 			<main class="col-lg-9">
-				<h3 id="gestionAmbiente">Tabla Editoriales</h3>		
+				<h3 id="tablaEditorial">Tabla Editoriales</h3>		
 				<p class="text-muted">
-					<ul>
+					<ul class="custom-list">
 						<li>CUIL: Código Único de Identificación Laboral de la editorial.</li>
 						<li>Correo: Correo de la editorial.</li>
 						<li>Nombre: Nombre de la editorial.</li>
@@ -308,9 +369,9 @@ Sótano: En el plano del sótano, encontrarás información detallada sobre las 
 				</p>
 			</main>
 			<main class="col-lg-9">
-				<h3 id="gestionAmbiente">Tabla Empleados</h3>		
+				<h3 id="tablaEmpleado">Tabla Empleados</h3>		
 				<p class="text-muted">
-					<ul>
+					<ul class="custom-list">
 						<li>Nombre: Nombre del empleado.</li>
 						<li>Apellido: Apellido del empleado.</li>
 						<li>Cargo: Cargo del empleado.</li>
@@ -319,9 +380,9 @@ Sótano: En el plano del sótano, encontrarás información detallada sobre las 
 				</p>
 			</main>
 			<main class="col-lg-9">
-				<h3 id="gestionAmbiente">Tabla Proveedores</h3>		
+				<h3 id="tablaProveedor">Tabla Proveedores</h3>		
 				<p class="text-muted">
-					<ul>
+					<ul class="custom-list">
 						<li>Nombre: Nombre del proveedor.</li>
 						<li>CUIL: Código Único de Identificación Laboral del proveedor.</li>
 						<li>Correo: Correo del proveedor.</li>
@@ -330,9 +391,9 @@ Sótano: En el plano del sótano, encontrarás información detallada sobre las 
 				</p>
 			</main>
 			<main class="col-lg-9">
-				<h3 id="gestionAmbiente">Tabla Ingredientes</h3>		
+				<h3 id="tablaIngrediente">Tabla Ingredientes</h3>		
 				<p class="text-muted">
-					<ul>
+					<ul class="custom-list">
 						<li>ID_ingredientes: Identificador único del ingrediente.</li>
 						<li>Nombre: Nombre del ingrediente.</li>
 						<li>Cantidad: Cantidad del ingrediente.</li>
@@ -340,41 +401,41 @@ Sótano: En el plano del sótano, encontrarás información detallada sobre las 
 				</p>
 			</main>
 			<main class="col-lg-9">
-				<h3 id="gestionAmbiente">Diagrama de Flujo de datos</h3>		
+				<h2 id="dfd">Diagrama de Flujo de datos</h2>		
 				<p class="text-muted">Los Diagramas de Flujo de Datos (DFD) son una herramienta esencial en la planificación y modelado de sistemas, y desempeñan un papel fundamental en el proyecto Akira Cafe. Estos diagramas representan visualmente el flujo de información y datos dentro de la empresa, ayudando a comprender cómo se recopilan, procesan y distribuyen los datos en diferentes etapas de la operación del café literario.
 
 					En esta sección, exploraremos en detalle los DFD que se han desarrollado para Akira Cafe, lo que nos permitirá tener una visión clara de cómo funcionan los procesos internos, cómo se gestionan los datos de clientes, proveedores, pedidos, libros y más
 				</p>
 			</main>
 			<main class="col-lg-9">
-				<h3 id="gestionAmbiente">DFD Nivel 1</h3>		
+				<h3 id="dfd1">DFD Nivel 1</h3>		
 				<p class="text-muted">En este nivel inicial, se nos brinda una visión fundamental del flujo de información relacionada con la atención al cliente. Aquí, podemos observar cómo nuestros empleados interactúan con los clientes, reciben sus pedidos y se encargan de su preparación. Esencialmente, este nivel nos muestra cómo se gestiona la experiencia del cliente desde el momento en que entra a Akira Cafe hasta el momento en que recibe su pedido. 
 				</p>
-				<a href="#" class="btn btn-success">Descargar DFD Nivel 1</a>
+				<a href="#" class="btn btn-custom">Descargar DFD Nivel 1</a>
 			</main>
 			<main class="col-lg-9">
 				<br>
-				<h3 id="gestionAmbiente">DFD Nivel 2</h3>		
+				<h3 id="dfd2">DFD Nivel 2</h3>		
 				<p class="text-muted">En el segundo nivel, exploraremos cómo fluye la información en los diversos departamentos y sectores clave de nuestra empresa, como la cocina, el bar, la biblioteca y otros. Este nivel nos proporciona una visión más detallada de cómo cada área opera y cómo se interconectan entre sí para brindar una experiencia integral a nuestros clientes. Aquí, podremos comprender mejor cómo se coordinan las actividades en cada sector y cómo se asegura una operación eficiente y sincronizada en Akira Cafe.
 					
 				</p>
-				<a href="#" class="btn btn-success">Descargar DFD Nivel 2</a>
+				<a href="#" class="btn btn-custom">Descargar DFD Nivel 2</a>
 			</main>
 			<main class="col-lg-9">
 				<br>
-				<h3 id="gestionAmbiente">DFD Nivel 3</h3>		
+				<h3 id="dfd3">DFD Nivel 3</h3>		
 				<p class="text-muted">En el tercer nivel, se presentará la información relacionada con la gestión de los empleados, lo que incluye aspectos como la administración de salarios y las responsabilidades que deben cumplir en sus roles. Aquí, obtendremos una visión más profunda de cómo se estructura el departamento de recursos humanos y cómo se asegura que nuestros empleados estén debidamente compensados y cuenten con las pautas necesarias para llevar a cabo sus labores de manera efectiva. Este nivel es esencial para comprender cómo se fomenta un ambiente de trabajo favorable y se garantiza el desempeño óptimo de nuestro equipo en Akira Cafe.
 				</p>
-				<a href="#" class="btn btn-success">Descargar DFD Nivel 3</a>
+				<a href="#" class="btn btn-custom">Descargar DFD Nivel 3</a>
 			</main>
 			<main class="col-lg-9">
 				<br>
-				<h3 id="gestionAmbiente">DFD Nivel 4</h3>		
+				<h3 id="dfd4">DFD Nivel 4</h3>		
 				<p class="text-muted">En el cuarto nivel, se nos ofrece una representación detallada de cómo se generan las ventas y cómo se desarrolla este proceso. Aquí, la información se presenta de manera gráfica en un diagrama que ilustra el flujo de ventas en Akira Cafe. Este nivel nos permite visualizar claramente los pasos y las interacciones involucradas en el proceso de ventas, desde la interacción inicial con el cliente hasta la conclusión de la transacción. La visualización en forma de diagrama facilita la comprensión de este aspecto crítico de nuestro negocio y nos ayuda a identificar posibles áreas de mejora en la gestión de ventas. 
 				</p>
 			</main>
 			<main class="col-lg-9">
-				<h3 id="gestionAmbiente">Distribucion del trabajo</h3>		
+				<h2 id="distribucionTrabajo">Distribucion del trabajo</h2>		
 				<p class="text-muted">Nuestra empresa cuenta con una asignación cuidadosa de puestos y horarios para nuestros trabajadores, lo que contribuye a una gestión eficiente de nuestros recursos. En Akira Cafe, operamos con dos turnos principales:
 					<br>
 					Turno Mañana: Este turno abarca desde las 8:00 AM hasta las 12:00 PM, brindando cobertura en la primera mitad del día. <br>
@@ -384,13 +445,13 @@ Sótano: En el plano del sótano, encontrarás información detallada sobre las 
 					<br>
 					Esta organización meticulosa de horarios y puestos es crucial para brindar un servicio de calidad a nuestros clientes y mantener un ambiente de trabajo armonioso para nuestro equipo en Akira Cafe.
 				</p>
-				<a href="#" class="btn btn-success">Descargar Distribucion del trabajo</a>
+				<a href="#" class="btn btn-custom">Descargar Distribucion del trabajo</a>
 			</main>
 			<main class="col-lg-9">
 				<br>
-				<h3 id="gestionAmbiente">Cursogramas</h3>		
+				<h2 id="cursograma">Cursogramas</h2>		
 				<p class="text-muted">Los cursogramas son una herramienta invaluable para comprender y visualizar cómo fluyen las actividades y procesos en una organización. Para Akira Cafe, hemos elaborado cursogramas para las siguientes actividades:
-					<ul>
+					<ul class="custom-list">
 						<li>Pedido de Libros</li>
 						<li>Pedido de Suministros</li>
 						<li>Factura de Pedidos</li>
@@ -400,9 +461,9 @@ Sótano: En el plano del sótano, encontrarás información detallada sobre las 
 				</p>
 			</main>
 			<main class="col-lg-9">
-				<h3 id="gestionAmbiente">Pedido de libros</h3>		
+				<h3 id="pedidoLibro">Pedido de libros</h3>		
 				<p class="text-muted">El cursograma de "Pedido de Libros" en Akira Cafe se desarrolla de la siguiente manera:
-					<ul>
+					<ul class="custom-list">
 						<li>
 							Proveedor entrega los remitos al encargado: <br>
 							El proceso comienza cuando el proveedor entrega los remitos al encargado de biblioteca
@@ -432,9 +493,9 @@ Sótano: En el plano del sótano, encontrarás información detallada sobre las 
 				</p>
 			</main>
 			<main class="col-lg-9">
-				<h3 id="gestionAmbiente">Pedido de Suministros</h3>		
+				<h3 id="pedidoSuministro">Pedido de Suministros</h3>		
 				<p class="text-muted">El cursograma de "Pedido de Libros" en Akira Cafe se desarrolla de la siguiente manera:
-					<ul>
+					<ul class="custom-list">
 						<li>
 							Proveedor entrega los remitos al encargado: <br>
 							El proceso comienza cuando el proveedor entrega los remitos al encargado del almacen
@@ -464,9 +525,9 @@ Sótano: En el plano del sótano, encontrarás información detallada sobre las 
 				</p>
 			</main>
 			<main class="col-lg-9">
-				<h3 id="gestionAmbiente">Factura de Pedidos</h3>		
+				<h3 id="facturaPedido">Factura de Pedidos</h3>		
 				<p class="text-muted">El proceso de "Facturación de Pedidos" en Akira Cafe se lleva a cabo de la siguiente manera:
-					<ul>
+					<ul class="custom-list">
 					<li>
 						El Mesero entrega una nota de pedido al Cajero: <br>
 						Cuando un cliente realiza un pedido en el café, el mesero toma nota de los elementos solicitados por el cliente, ya sean alimentos, bebidas u otros productos. Luego, entrega esta "nota de pedido" al cajero.
@@ -490,9 +551,9 @@ Sótano: En el plano del sótano, encontrarás información detallada sobre las 
 				</p>
 			</main>
 			<main class="col-lg-9">
-				<h3 id="gestionAmbiente">Factura de pedido de libros</h3>		
+				<h3 id="facturaLibro">Factura de pedido de libros</h3>		
 				<p class="text-muted">El proceso de "Facturación de Libros" en Akira Cafe se lleva a cabo de la siguiente manera:
-					<ul>
+					<ul class="custom-list">
 						<li>
 							Cliente Solicita un Libro al Bibliotecario:<br>
 							Cuando un cliente desea solicitar un libro de la biblioteca, se comunica con el bibliotecario y proporciona los detalles del libro que desea tomar prestado.
@@ -513,7 +574,7 @@ Sótano: En el plano del sótano, encontrarás información detallada sobre las 
 				</p>
 			</main>
 			<main class="col-lg-9">
-				<h3 id="gestionAmbiente">Seguridad</h3>		
+				<h2 id="seguridad">Seguridad</h2>		
 				<p class="text-muted">En Akira Café, entendemos que la seguridad es una prioridad fundamental. Nuestra empresa, un apacible café literario, se esfuerza por crear un entorno acogedor y seguro tanto para nuestros valiosos clientes como para nuestros dedicados empleados.
 					<br>
 					Para garantizar esto, hemos implementado medidas de seguridad rigurosas que incluyen sistemas de vigilancia para monitorear nuestras instalaciones, asegurándonos de que los momentos que pasas con nosotros sean tranquilos y protegidos. También mantenemos una iluminación adecuada en todo el establecimiento, creando un ambiente agradable y seguro en todo momento.
@@ -533,7 +594,7 @@ Sótano: En el plano del sótano, encontrarás información detallada sobre las 
 				</p>
 			</main>
 			<main class="col-lg-9">
-				<h3 id="gestionAmbiente">Higiene</h3>		
+				<h2 id="higiene">Higiene</h2>		
 				<p class="text-muted">En Akira Café, nos tomamos la higiene muy en serio para ofrecer productos de alta calidad y un ambiente seguro a nuestros clientes. A continuación, te presento algunas de las leyes y regulaciones de higiene que cumplimos rigurosamente:
 					<br>
 					1. Normativas de Higiene Alimentaria: Cumplimos con las estrictas leyes de seguridad alimentaria que garantizan la calidad y seguridad de los alimentos que servimos. Esto incluye el manejo adecuado de alimentos, la temperatura de almacenamiento y la limpieza y desinfección de equipos y utensilios de cocina.
@@ -552,7 +613,7 @@ Sótano: En el plano del sótano, encontrarás información detallada sobre las 
 				</p>
 			</main>
 			<main class="col-lg-9">
-				<h3 id="gestionAmbiente">Costos</h3>
+				<h2 id="costo">Costos</h2>
     <p class="text-muted">A continuación, se presenta una lista de costos relacionados con los elementos, sus precios unitarios, la cantidad adquirida y el subtotal correspondiente. Estos costos son parte de la gestión de gastos en nuestro proyecto o negocio, y se detallan a continuación para una mejor comprensión y control financiero.</p> 
 				<div class="table-responsive">
 					<table class="table table-striped">
@@ -646,12 +707,9 @@ Sótano: En el plano del sótano, encontrarás información detallada sobre las 
 						</tbody>
 					</table>
 				</div>
-			</main>
-			
+			</main>	
 	</div>
 </section>
-
 </div><!-- container //  -->
-
 </body>
 </html>
