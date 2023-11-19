@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="keywords" content="htmlcss bootstrap aside menu, vertical, sidebar nav menu CSS examples" />
+<meta name="description" content="Bootstrap 5 sidebar navigation menu example" />
+<link rel="icon" href="images/logo.png"> 
+
+<title>Galeria </title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+
+<!-- ======= Icons used for dropdown (you can use your own) ======== -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
+<style type="text/css">
+
+.sidebar li .submenu{ 
+	list-style: none; 
+	margin: 0; 
+	padding: 0; 
+	padding-left: 1rem; 
+	padding-right: 1rem;
+}
+.sidebar .nav-link {
+    font-weight: 500;
+    color: black;
+}
+.sidebar .nav-link:hover {
+    color: red;
+}
+/* Estilizar un botón personalizado en Bootstrap */
+.btn-custom {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #000000; /* Texto negro */
+    border: none; /* Eliminar el borde */
+    transition: background-color 0.3s, color 0.3s; /* Agregar una transición suave */
+}
+
+.btn-custom:hover {
+    background-color: #ff1900; /* Cambiar el color de fondo a rojo al pasar el ratón por encima */
+    color: #ffffff; /* Cambiar el texto a blanco al pasar el ratón por encima */
+}
+ul.custom-list {
+    list-style: none; /* Eliminar los marcadores de lista */
+    padding-left: 0; /* Eliminar el relleno a la izquierda */
+}
+
+ul.custom-list li {
+    font-size: 16px;
+    margin: 5px 0;
+    padding-left: 20px; 
+}
+/* Estilo para el encabezado h2 con la clase "informe-header" */
+.informe-header {
+    font-size: 34pt;
+    margin-bottom: 5px;
+}
+
+/* Estilo para el enlace dentro del encabezado con la clase "informe-header" */
+.informe-header a, h2 {
+    text-decoration: none;
+    color: #ff0000;
+    transition: color 0.3s;
+}
+
+/* Cambiar el color del enlace al pasar el ratón por encima */
+.informe-header a:hover {
+    color: #b30000;
+}
+
+
+</style>
+
+
+</head>
+<body class="bg-light">
+    <header class="section-header py-3">
+        <div class="container">
+            <h2 class="informe-header"><a href="index.html">Galería de Akira Cafe</a></h2>
+        </div>
+    </header>
+    <div class="container">
+        <section class="section-content py-3">
+            <div class="row">
+                <aside class="col-lg-3">
+                    <nav class="sidebar card py-2 mb-4">
+                        <ul class="nav flex-column" id="nav_accordion">
+	<li class="nav-item">
+		<a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item1" href="#"> Planos 2D<i class="bi small bi-caret-down-fill"></i> </a>
+		<ul id="menu_item1" class="submenu collapse" data-bs-parent="#nav_accordion">
+			<li><a class="nav-link" href="#sotano2d">Sotano</a></li>
+		    <li><a class="nav-link" href="#plantaBaja2d">Planta Baja</a></li>
+            <li><a class="nav-link" href="#plantaAlta2d">Planta Alta</a></li>
+		</ul>
+	</li>
+    <li class="nav-item">
+		<a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item2" href="#"> Planos 3D<i class="bi small bi-caret-down-fill"></i> </a>
+		<ul id="menu_item2" class="submenu collapse" data-bs-parent="#nav_accordion">
+			<li><a class="nav-link" href="#sotano3d">Sotano</a></li>
+		    <li><a class="nav-link" href="#plantaBaja3d">Planta Baja</a></li>
+            <li><a class="nav-link" href="#plantaAlta3d">Planta Alta</a></li>
+		</ul>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item3" href="#"> Diagramas de flujo <i class="bi small bi-caret-down-fill"></i> </a>
+		<ul id="menu_item3" class="submenu collapse" data-bs-parent="#nav_accordion">
+			<li><a class="nav-link" href="#dfd0">Diagrama de contexto </a></li>
+			<li><a class="nav-link" href="#dfd1">Atencion al cliente </a></li>
+		    <li><a class="nav-link" href="#dfd2.1">Bar </a></li>
+		    <li><a class="nav-link" href="#dfd2.2">Cocina</a></li>
+		    <li><a class="nav-link" href="#dfd2.3">Biblioteca </a></li>
+			<li><a class="nav-link" href="#dfd3">Empleados Sueldo </a></li>
+			<li><a class="nav-link" href="#dfd4">Ventas </a></li>
+		</ul>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu_item4" href="#"> Cursogramas <i class="bi small bi-caret-down-fill"></i> </a>
+		<ul id="menu_item4" class="submenu collapse" data-bs-parent="#nav_accordion">
+			<li><a class="nav-link" href="#pedidoLibro">Pedido de Libros </a></li>
+		    <li><a class="nav-link" href="#pedidoSuministro">Pedido de Suministros </a></li>
+		    <li><a class="nav-link" href="#facturaPedido">Factura de Pedidos</a></li>
+		    <li><a class="nav-link" href="#facturaLibro">Factura de Pedido de Libros </a></li>
+		</ul>
+	</li>
+</ul>
+</nav>
+<!-- ============= COMPONENT END// ============== -->	
+		</aside>
+
+		<main class="col-lg-8">
+			<h2>Galería de Proyecto Akira Cafe</h2>
+			<p>Sumérgete en una experiencia visual única mientras exploras nuestra galería, que te presenta una cuidadosa selección de imágenes destacadas del inspirador proyecto Akira Cafe. Descubre la esencia y la historia detrás de este emprendimiento a través de fotografías que capturan momentos clave, expresan la autenticidad de nuestro espacio y resaltan los elementos distintivos que definen la identidad de Akira Cafe.
+			</p>
+		</main>
+        <div class="container">
+        <div class="row">
+		<main class="col-lg-9">
+		<h3 id="planos2d">Planos 2D - Sotano</h3>		
+		<img src="images/Sotano.png" alt=""  class="img-fluid mb-4">
+		</main>
+        <main class="col-lg-9">
+            <h3 id="planos2d">Planos 2D - Planta Baja</h3>		
+            <img src="images/Planta Baja.png" alt="" class="img-fluid mb-4">
+            </main>
+            <main class="col-lg-9">
+            <h3 id="planos2d">Planos 2D - Planta Alta</h3>		
+            <img src="images/Primer Piso.png" alt=""  class="img-fluid mb-4">
+            </main>
+            <main class="col-lg-9">
+            <h3 id="planos2d">Planos 3D - Sotano</h3>		
+            <img src="images/Sotano3d.png" alt=""  class="img-fluid mb-4">      
+            </main>
+            <main class="col-lg-9">
+            <h3 id="planos2d">Planos 3D - Planta Baja 1</h3>		
+            <img src="images/PlantaBaja1.png" alt=""  class="img-fluid mb-4">          
+            </main>
+            <main class="col-lg-9">
+                <h3 id="planos2d">Planos 3D - Planta Baja 2</h3>		
+                <img src="images/PlantaBaja2.png" alt=""  class="img-fluid mb-4">          
+                </main>
+            <main class="col-lg-9">
+            <h3 id="planos2d">Planos 3D - Planta Alta</h3>		
+            <img src="images/plantaAlta.png" alt="" class="img-fluid mb-4">                
+            </main>
+
+				<main class="col-lg-9">
+                    <h3 id="dfd0">Diagrama de contexto</h3>		
+                  <img src="images/contexto.png" alt="" class="img-fluid mb-4">
+                </main>
+                <main class="col-lg-9">
+                    <br>
+                    <h3 id="dfd1">Atencion al cliente</h3>		
+                    <img src="images/dfd1.png" alt="" class="img-fluid mb-4">
+                </main>
+                <main class="col-lg-9">
+                    <h3>Bar</h3>
+                    <img src="images/dfd2.1.png" alt=""  class="img-fluid mb-4">
+                </main>
+                <main class="col-lg-9">
+                    <br>
+                    <h3 id="dfd2.2">Cocina</h3>		
+                    <img src="images/dfd2.2.png" alt=""  class="img-fluid mb-4">
+                </main>
+                <main class="col-lg-9">
+                    <br>
+                    <h3 id="dfd2.3">Biblioteca</h3>		
+                   <img src="images/dfd2.3.png" alt=""  class="img-fluid mb-4">
+                </main>
+                <main class="col-lg-9">
+                    <br>
+                    <h3 id="dfd3">Sueldo Empleados</h3>		
+                    <img src="images/dfd3.png" alt=""  class="img-fluid mb-4">
+                </main>
+			
+			<main class="col-lg-9">
+				<h3 class="card-title" id="dfd4">Ventas</h3>
+				<img src="images/dfd4.png" alt=""  class="img-fluid mb-4">	
+			</main>
+			
+			<main class="col-lg-9">
+				<h3 id="pedidoLibro">Pedido de libros</h3>
+                <img src="images/pedidoLibros.png" alt=""  class="img-fluid mb-4">
+			</main>
+			<main class="col-lg-9">
+				<h3 id="pedidoSuministro">Pedido de Suministros</h3>
+                <img src="images/pedidoSuministros.png" alt=""  class="img-fluid mb-4">		
+			</main>
+			<main class="col-lg-9">
+				<h3 id="facturaPedido">Factura de Pedidos</h3>
+                <img src="images/facturaCajero.png" alt=""  class="img-fluid mb-4">		
+			</main>
+			<main class="col-lg-9">
+				<h3 id="facturaLibro">Factura de pedido de libros</h3>
+                <img src="images/facturaLibros.png" alt="" class="img-fluid mb-4">		
+			</main>
+        </div>
+        </section>
+        </div>
+        </div>
+        </section>
+        </div>
+</div><!-- container //  -->
+</body>
+</html>
